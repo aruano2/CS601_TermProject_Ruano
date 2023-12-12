@@ -1,0 +1,148 @@
+/* adjusting placement of body on screen and color */
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(193, 207, 224);
+}
+
+header{
+    text-align: center;
+    border: 1px solid black;
+    background-color: rgb(64, 131, 214);
+    box-shadow: 0 0 10px black;
+    height: 128px;
+}
+
+/* adjusting margin bottom of header */
+header h1 {
+    margin-bottom: 0;
+}
+
+/* setting font for whole page */
+* {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+/* adjusting position of main text section on webpage */
+main {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+/* centering words with specific class */
+.words-center {
+    text-align: center;
+}
+
+/* centerint tables */
+.center{
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+}
+
+/* setting left hand columns of tables to left */
+.center-column{
+    text-align: left;
+}
+
+/* erasing bullet points */
+nav ul{
+    list-style: none;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+@media screen and (max-width: 400px) {
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    header{
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+      background-color: rgb(169, 191, 218);
+    }
+  }
+
+@media screen and (min-width: 1400px) {
+    body {
+      background-color: rgb(139, 167, 202);
+    }
+  }
+
+nav ul li{
+    display: inline-block;
+}
+
+/* changing appearance of navigation buttons */
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 100px;
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+
+/* mouse over navigation button */
+nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+/* centering artwork */
+.artwork{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+footer{
+    border:1px solid black;
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgb(64, 131, 214);
+    box-shadow: 0 0 10px black;
+    height: 25px;
+}
+
+
+/* unvisited link */
+a.change-link:link {
+  color: blue;
+}
+
+/* visited link */
+a.change-link:visited {
+  color: purple;
+}
+
+/* mouse over link */
+a.change-link:hover {
+  color: lightblue;
+}
+
+/* selected link */
+a.change-link:active {
+  color: blue;
+}
